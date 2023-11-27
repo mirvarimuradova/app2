@@ -8,6 +8,8 @@ const CustomButtom = () => {
    setItem(!item)
  }
  function warnButton(){
+  let button = document.querySelector(".varn")
+  button.style.background = 'red'
     alert('Warning')
  }
   return (
@@ -18,7 +20,7 @@ const CustomButtom = () => {
       bazı kaynaklarda Celaleddin ve Ömer olarak geçmektir.[1] İmamüddin gerçek adı değil lakabıdır.[1]
       </p>}
       
-      <button onClick={warnButton}>warnMessage</button><br/>
+      <button className='varn' onClick={warnButton}>warnMessage</button><br/>
       <button onMouseOver={() => setIsVisible(true)}
         onMouseOut={() => setIsVisible(false)}
         
